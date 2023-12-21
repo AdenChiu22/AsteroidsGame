@@ -71,7 +71,7 @@ public void keyPressed(){
    if(key == 'f'){
     aden.hyperspace();
   } 
-  if(key == ' '){
+  if(key == 'g'){
 shots.add(new Bullet(aden));
 }
 }
