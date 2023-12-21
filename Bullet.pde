@@ -8,4 +8,6 @@ accelerate(2);
 public void show(){
 ellipse((float)myCenterX,(float)myCenterY,10,10);
 }
+public int getX(){return (int)myCenterX;}
+public int getY(){return (int)myCenterY;}
 }
