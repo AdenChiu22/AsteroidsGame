@@ -31,6 +31,12 @@ public void draw()
      theList.remove(i);
  
  }
+ for (int i = 0; i < shots.size(); i++)
+{
+shots.get(i).show();
+shots.get(i).move();
+}
+
  aden.show();
  aden.move();
  for (int i = 0; i < theList.size(); i++)
@@ -65,7 +71,7 @@ public void keyPressed(){
    if(key == 'f'){
     aden.hyperspace();
   } 
-  if(key == 'g'){
+  if(key == ' '){
 shots.add(new Bullet(aden));
 }
 }
