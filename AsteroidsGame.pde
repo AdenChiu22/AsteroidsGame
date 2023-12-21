@@ -39,6 +39,20 @@ shots.get(i).move();
 
  aden.show();
  aden.move();
+ for (int i = 0; i < theList.size(); i++)
+  {
+    for (int j = 0; j < shots.size(); j++)
+    {
+       if (dist((float)theList.get(i).getX(), (float)theList.get(i).getY(), 
+       (float)shots.get(j).getX(), (float)shots.get(j).getY() ) < 22)
+          {
+          theList.remove(theList.get(i));
+          shots.remove(shots.get(j));
+          break;
+          }
+    }
+}
+   
    
 }
 public void keyPressed(){
