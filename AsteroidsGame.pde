@@ -1,6 +1,5 @@
 Spaceship aden = new Spaceship();
 Asteroid baden = new Asteroid(); 
-Bullet maden = new Bullet();
 ArrayList <Asteroid> theList = new ArrayList <Asteroid>();
 ArrayList <Bullet> shots = new ArrayList <Bullet>();
 
@@ -59,7 +58,6 @@ public void keyPressed(){
     aden.hyperspace();
   } 
   if(key == ' '){
-shots.add(new Bullet(maden));
+shots.add(new Bullet(aden));
 }
 }
-
